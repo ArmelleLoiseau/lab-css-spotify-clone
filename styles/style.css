@@ -6,3 +6,156 @@ Green: #00B172
 White: #FFF
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Roboto&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,'Courier New', Courier, monospace ;
+}
+
+#topheader {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10%;
+}
+
+#logo {
+    height: 70%;
+    align-self: center;
+    margin-left: 50px; 
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1em;
+    align-items: flex-end;
+}
+
+#navbar ul li{
+    margin-right: 60px;
+    /* center each item on the vertical axis + lighter font + links ? */
+}
+
+
+#bottomheader {
+    background-image: url("/images/landing.jpg");
+    background-repeat: no-repeat; 
+    background-size: 136vh;
+    height: 90vh;
+    width: 200%;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section hr {
+    color: #00B172;
+    width: 280px;
+    border: 2px solid #00B172;
+    border-radius: 20px;
+    /* move it closer to the h2 */
+}
+
+#articlescontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+    gap: 40px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+}
+
+.article h3 {
+    color: #00B172;
+    font-weight: bolder;
+}
+
+.article img {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+footer {
+    background-color: #00B172;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    /* should position the image on the right side ?? */
+}
+
+#footerleftpart {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+}
+
+#footerleftpart h2 {
+    font-size: 2em;
+}
+
+#footerleftpart hr {
+    color: white;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 20px;
+    /* position it under the h2 */
+}
+
+#insideleftpart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#spotifywhiteimg {
+    width: 100px;
+    height: 100px;
+}
+
+#footerrightpart {
+    display: flex;
+    justify-content: center;
+}
+
+#footerrightpart img {
+    padding: 10px;
+    width: 50%;
+}
+
+.footerarticles {
+    width: 70%;;
+}
+
+.footerarticles h4{
+    font-size: 1.5em;
+}
+
