@@ -9,6 +9,10 @@ White: #FFF
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Roboto&display=swap');
 
+/* change font; 
+center the nav vertically; 
+move the hr closer to the titles; 
+align the 3 articles */
 
 body {
     margin: 0;
@@ -17,9 +21,19 @@ body {
     font-family: Roboto,'Courier New', Courier, monospace ;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    height: 80%;
+}
+
 #topheader {
     background-color: white;
     position: fixed;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,30 +52,37 @@ body {
     flex-direction: row;
     list-style: none;
     font-size: 1em;
-    align-items: flex-end;
 }
 
 #navbar ul li{
     margin-right: 60px;
-    /* center each item on the vertical axis + lighter font + links ? */
+    /* center each item on the vertical axis + lighter font  */
 }
 
 
 #bottomheader {
-    background-image: url("/images/landing.jpg");
-    background-repeat: no-repeat; 
-    background-size: 136vh;
-    height: 90vh;
-    width: 200%;
-    color: red;
+    background-image: url("./../images/landing.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 80vh;
+    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: center; 
     align-items: center; 
 }
 
+#bottomheader h1 {
+    font-size: 2.5rem;
+}
 
-section h2 {
+#bottomheader p {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+#centralsection h2 {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
@@ -72,15 +93,15 @@ section hr {
     width: 280px;
     border: 2px solid #00B172;
     border-radius: 20px;
-    /* move it closer to the h2 */
 }
 
 #articlescontainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin: 30px;
-    gap: 40px;
+    gap: 50px;
 }
 
 .article {
@@ -88,17 +109,18 @@ section hr {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 30%;
+    width: 25%;
 }
 
 .article h3 {
     color: #00B172;
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .article img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     align-self: center;
 }
 
@@ -107,7 +129,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    /* should position the image on the right side ?? */
+    margin: 20px;
 }
 
 #footerleftpart {
@@ -119,6 +141,7 @@ footer {
 
 #footerleftpart h2 {
     font-size: 2em;
+    text-align: center;
 }
 
 #footerleftpart hr {
@@ -126,7 +149,6 @@ footer {
     width: 400px;
     border: 2px solid white;
     border-radius: 20px;
-    /* position it under the h2 */
 }
 
 #insideleftpart {
@@ -144,11 +166,13 @@ footer {
 #footerrightpart {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #footerrightpart img {
     padding: 10px;
     width: 50%;
+    height: 50%;
 }
 
 .footerarticles {
